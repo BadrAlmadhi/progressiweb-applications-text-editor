@@ -13,8 +13,8 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js',
       database: './src/js/database.js',
-      header: './src/js/header.js',
       editor: './src/js/editor.js',
+      header: './src/js/header.js',
     },
     output: {
       filename: '[name].bundle.js',
@@ -26,7 +26,7 @@ module.exports = () => {
         title: 'JATE'
       }),
       new InjectManifest({
-        swSrc: './src-se.js',
+        swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({

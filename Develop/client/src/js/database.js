@@ -43,7 +43,7 @@ export const getDb = async () => {
 
   const contactDb = await openDB('jate', 1);
 
-  const tx = contactDB.transaction('jate', 'readonly');
+  const tx = contactDb.transaction('jate', 'readonly');
 
   const store = tx.objectStore('jate');
 
